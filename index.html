@@ -15,9 +15,17 @@
         }
 
         body {
-            background: #0a192f;
-            color: #8892b0;
+            background: linear-gradient(135deg, #00f2fe, #4facfe, #43e97b, #38f9d7);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #222;
             line-height: 1.6;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
         }
 
         /* Navigation */
@@ -26,16 +34,17 @@
             top: 0;
             width: 100%;
             padding: 20px 50px;
-            background: rgba(10, 25, 47, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
         }
 
         .logo {
-            color: #64ffda;
+            color: #ff0080;
             font-size: 24px;
             font-weight: bold;
             text-decoration: none;
@@ -47,13 +56,13 @@
         }
 
         .nav-links a {
-            color: #8892b0;
+            color: #222;
             text-decoration: none;
             transition: color 0.3s;
         }
 
         .nav-links a:hover {
-            color: #64ffda;
+            color: #ff0080;
         }
 
         /* Hero Section */
@@ -69,14 +78,15 @@
         }
 
         .hero-content h1 {
-            color: #ccd6f6;
+            color: #1a237e;
             font-size: 70px;
             margin-bottom: 20px;
             animation: fadeInUp 1s ease;
+            text-shadow: 0 2px 16px #fff6, 0 1px 0 #fff;
         }
 
         .hero-content h2 {
-            color: #64ffda;
+            color: #8e24aa;
             font-size: 30px;
             margin-bottom: 20px;
             animation: fadeInUp 1s ease 0.2s;
@@ -88,15 +98,19 @@
             margin-bottom: 30px;
             animation: fadeInUp 1s ease 0.4s;
             animation-fill-mode: both;
+            color: #222;
         }
 
         /* Projects Section */
         .projects {
             padding: 100px 150px;
+            background: rgba(255,255,255,0.85);
+            border-radius: 16px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.08);
         }
 
         .section-title {
-            color: #ccd6f6;
+            color: #ff0080;
             font-size: 40px;
             margin-bottom: 50px;
             text-align: center;
@@ -109,10 +123,11 @@
         }
 
         .project-card {
-            background: #112240;
+            background: #fff;
             padding: 20px;
             border-radius: 10px;
             transition: transform 0.3s;
+            color: #222;
         }
 
         .project-card:hover {
@@ -120,14 +135,16 @@
         }
 
         .project-card h3 {
-            color: #ccd6f6;
+            color: #00c3ff;
             margin-bottom: 10px;
         }
 
         /* Skills Section */
         .skills {
             padding: 100px 150px;
-            background: #112240;
+            background: rgba(255,255,255,0.85);
+            border-radius: 16px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.08);
         }
 
         .skills-grid {
@@ -139,9 +156,10 @@
 
         .skill-item {
             padding: 20px;
-            background: #0a192f;
+            background: #fff;
             border-radius: 10px;
             transition: transform 0.3s;
+            color: #222;
         }
 
         .skill-item:hover {
@@ -150,7 +168,7 @@
 
         .skill-item i {
             font-size: 40px;
-            color: #64ffda;
+            color: #ff0080;
             margin-bottom: 10px;
         }
 
@@ -158,6 +176,10 @@
         .contact {
             padding: 100px 150px;
             text-align: center;
+            background: rgba(255,255,255,0.85);
+            border-radius: 16px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+            color: #222;
         }
 
         .social-links {
@@ -168,13 +190,13 @@
         }
 
         .social-links a {
-            color: #8892b0;
+            color: #00c3ff;
             font-size: 24px;
             transition: color 0.3s;
         }
 
         .social-links a:hover {
-            color: #64ffda;
+            color: #ff0080;
         }
 
         /* Animations */
